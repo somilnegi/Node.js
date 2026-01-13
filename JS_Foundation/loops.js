@@ -65,12 +65,40 @@ for (let key in person) {
     console.log(key + ": " + person[key]);
 }
 
+let citiesPopulations = {
+    "Tokyo": 37400068,
+    "Delhi": 28514000,
+    "Shanghai": 25582000,
+    "London": 8982000,
+    "Berlin": 3769000,
+    "New York": 8419600,
+    "Paris": 2148000
+};
+
+let cityPopulations = {};
+for (let city in citiesPopulations) { 
+    if (city === "Berlin") {
+        break;
+    }
+    cityPopulations[city] = citiesPopulations[city];
+}
+
 // 5. For...Of Loop
 // The for...of loop is used to iterate over iterable objects like arrays.
 const colors = ["red", "green", "blue"];
 for (let color of colors) {
     console.log("Color:", color);
 }
+
+let numbersList = [1, 2, 3, 4, 5];
+let smallNumbers = [];
+for (const number of numbersList) {
+    if (number === 4) {
+        break;
+    }
+    smallNumbers.push(number);
+}
+console.log("Numbers before 4:", smallNumbers);
 
 // 6. forEach Method
 // The forEach method executes a provided function once for each array element.
@@ -79,3 +107,14 @@ numbersArray.forEach(function(number) {
     console.log("Number:", number);
 });
 
+let fruits = ["apple", "banana", "cherry", "date"];
+let selectedFruits = [];
+fruits.forEach(function (fruit) {
+    if (fruit === "cherry") {
+        return; // Skip cherry
+    }
+    selectedFruits.push(fruit);
+    }
+)
+
+console.log("Selected fruits (excluding cherry):", selectedFruits);
