@@ -1,0 +1,20 @@
+This is a copy of npm.txt
+node package manager (npm) is a package manager for JavaScript, primarily used for Node.js.
+
+It allows developers to install, share, and manage dependencies (libraries or packages) for their projects.
+
+To use npm, you typically run commands in your terminal or command prompt.
+
+@types/node is a package that provides TypeScript/JavaScript definitions for Node.js, enabling better type checking and autocompletion when working with Node.js in TypeScript/JavaScript projects.
+
+To install a package using npm, you can use the following command in your terminal:
+
+npm install <package-name> or npm i <package-name>
+
+This command fetches the specified package from the npm registry and installs it in your project's 'node_modules' directory.
+
+As soon as you run the above command, npm will create a folder named 'node_modules' in your project directory (if it doesn't already exist) and download the specified package along with its dependencies into that folder.
+
+We don't push the node_modules folder to version control systems like Git because it can be very large and can be easily recreated using the npm install command based on the package.json file.
+
+Instead, we include a package.json file in our project, which lists all the dependencies our project needs. This way, anyone who clones the project can simply run npm install to get all the required packages.

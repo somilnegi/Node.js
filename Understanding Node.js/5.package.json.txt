@@ -1,0 +1,48 @@
+package.json is a file that contains metadata about a Node.js project, including its dependencies, scripts, version, and other configurations.
+
+It is created using the command `npm init` and is essential for managing the project's dependencies and scripts.
+
+It looks something like this:
+
+{
+    "name": "my-project",
+    "version": "1.0.0",
+    "description": "A sample Node.js project",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Your Name",  
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
+
+
+
+There is one more file called package-lock.json that is automatically generated for any operations where npm modifies either the node_modules tree, or package.json.
+
+It maintains dependencies of dependency versions, ensuring that installations are reproducible across different environments.
+
+Example of package-lock.json:
+
+{
+    "name": "my-project",
+    "version": "1.0.0",
+    "lockfileVersion": 1,
+    "requires": true,
+    "dependencies": {
+        "express": {
+            "version": "4.17.1",
+            "resolved": "https://registry.npmjs.org/express/-/express-4.17.1.tgz",
+            "integrity": "sha512-...",
+            "requires": {
+                "accepts": "~1.3.7",
+                "array-flatten": "1.1.1",
+                // other dependencies...
+            }
+        }
+    }
+}

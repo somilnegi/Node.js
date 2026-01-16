@@ -1,0 +1,14 @@
+Modules are reusable pieces of code that can be imported and used in different parts of an application. In Node.js, modules help in organizing code into manageable sections, promoting code reuse and separation of concerns.
+
+There are three main types of modules in Node.js:
+
+1. Built-in Modules
+These are the core modules provided by Node.js.
+
+2. 3rd Party Modules
+These are modules that can be installed via npm.
+
+3. Custom Modules
+These are user-defined modules specific to the application.
+
+
