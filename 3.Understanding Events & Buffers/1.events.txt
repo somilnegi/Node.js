@@ -1,0 +1,13 @@
+Events in Node.js allow us to create, fire, and listen for events.
+The 'events' module in Node.js provides the EventEmitter class, which is used to handle events.
+The events are like a publisher-subscriber model where an event is emitted and multiple listeners can subscribe to that event to perform actions when the event occurs.
+
+The events in Node.js are built on top of the libuv library.
+
+libuv is a multi-platform support library with a focus on asynchronous I/O. It is used by Node.js to handle events and perform non-blocking operations. It tells the CPU to execute tasks in the background and notifies Node.js when they are complete, allowing the main thread to continue executing other code without waiting.
+
+Since Node.js is single-threaded, it uses an event-driven architecture to handle multiple operations concurrently. This is achieved through the use of the event loop, which continuously checks for events and executes their associated callbacks when they occur.
+
+This is done using the EventEmitter class from the 'events' module. When an event is emitted, the event loop picks it up and executes the corresponding listener functions.
+
+When an event occurs, an object is created that contains lot of listener functions that are associated with that event. The event loop then picks up this event object and executes all the listener functions in the order they were registered. The listeners can be multi-callable, meaning multiple functions can be registered to listen for the same event or single-callable, meaning only one function is registered for that event.
