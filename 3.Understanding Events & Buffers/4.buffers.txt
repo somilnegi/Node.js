@@ -1,0 +1,10 @@
+Buffer in Node.js is a global object that provides a way to work with binary data directly.
+
+It is a temporary memory allocation outside the V8 JavaScript engine heap.
+
+Node.js doesn't have a built-in binary data type like some other languages. So it doesn't support direct manipulation of binary data.
+
+It is similar to an array of integers but corresponds to a raw memory allocation outside the V8 heap.
+
+Buffers are used to handle binary data streams, such as reading from files or network connections.
+
