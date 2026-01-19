@@ -1,0 +1,32 @@
+HTTP is used to transfer data over the web. It is a protocol that defines how messages are formatted and transmitted, and how web servers and browsers should respond to various commands.
+
+It includes the following key components:
+
+1. Request Methods: These are the actions that can be performed on a resource. Common methods include GET (retrieve data), POST (submit data), PUT (update data), DELETE (remove data), and PATCH (partially update data).
+
+2. Status Codes: These are three-digit codes that indicate the result of a request. For example, 200 means OK, 404 means Not Found, and 500 means Internal Server Error.
+
+3. Headers: These provide additional information about the request or response, such as content type, content length, and caching policies.
+
+4. Body: This is the actual data being sent or received, such as HTML content, JSON data, or files.
+
+5. URL: The Uniform Resource Locator specifies the address of the resource being requested.
+The url consists of scheme(protocol), subdomain, domain, tld, path, query string.
+
+6. Protocol Version: HTTP/1.1 and HTTP/2 are the most commonly used versions, with HTTP/2 offering improved performance through multiplexing and header compression.
+
+
+HTTP Methods, sent by the client
+- GET: Retrieve data from a server, such as see tweets, watch videos, or read articles.
+- POST: Send data to a server to create a new resource, such as submitting a form or uploading a file.
+- PUT: Update an existing resource on the server, such as changing user information.
+- DELETE: Remove a resource from the server, such as deleting a post or comment.
+- PATCH: Partially update a resource on the server, such as changing a single field in a user profile.
+
+
+HTTP Status Codes, sent by the server in the response
+- 1xx (Informational): Request received, continuing process.
+- 2xx (Success): The request was successfully received, understood, and accepted (e.g., 200 OK, 201 Created).
+- 3xx (Redirection): Further action needs to be taken to complete the request (e.g., 301 Moved Permanently, 302 Found).
+- 4xx (Client Error): The request contains bad syntax or cannot be fulfilled (e.g., 400 Bad Request, 401 Unauthorized, 404 Not Found).
+- 5xx (Server Error): The server failed to fulfill a valid request (e.g., 500 Internal Server Error, 502 Bad Gateway).
