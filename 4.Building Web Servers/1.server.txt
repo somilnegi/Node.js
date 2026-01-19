@@ -1,0 +1,15 @@
+The Internet consists of clients and servers.
+They communicate using req-res cycle over protocols like HTTP and HTTPS.
+
+Server can be defined as a place where data is stored and accessed by clients over a network.
+A web server is a software application that serves web pages to users upon request via HTTP/HTTPS protocols.
+It has a unique public IP address and often a domain name (like www.example.com) that users can use to access the server. It has uptime of 24/7 to ensure availability.
+
+Client is a device or software that requests data or services from a server. Examples of clients include web browsers (like Chrome, Firefox) and mobile apps.
+
+The server listens for incoming requests & processes them, sending back the appropriate responses (like HTML pages, images, etc.) to the client.
+The processing includes authentication, authorization, validation, and data retrieval from databases if necessary.
+
+HTTP (HyperText Transfer Protocol) is the foundation of data communication on the web. It defines how messages are formatted and transmitted, and how web servers and browsers should respond to various commands.
+
+HTTPS (HyperText Transfer Protocol Secure) is an extension of HTTP that uses encryption (SSL/TLS) to secure data transfer between the client and server, ensuring privacy and data integrity.
