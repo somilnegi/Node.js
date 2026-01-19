@@ -1,11 +1,17 @@
 HTTP is used to transfer data over the web. It is a protocol that defines how messages are formatted and transmitted, and how web servers and browsers should respond to various commands.
 
 It includes the following key components:
+
 1. Request Methods: These are the actions that can be performed on a resource. Common methods include GET (retrieve data), POST (submit data), PUT (update data), DELETE (remove data), and PATCH (partially update data).
+
 2. Status Codes: These are three-digit codes that indicate the result of a request. For example, 200 means OK, 404 means Not Found, and 500 means Internal Server Error.
+
 3. Headers: These provide additional information about the request or response, such as content type, content length, and caching policies.
+
 4. Body: This is the actual data being sent or received, such as HTML content, JSON data, or files.
-5. URL: The Uniform Resource Locator specifies the address of the resource being requested.
+
+5. URL: The Uniform Resource Locator specifies the address of the resource being requested. 
+
 6. Protocol Version: HTTP/1.1 and HTTP/2 are the most commonly used versions, with HTTP/2 offering improved performance through multiplexing and header compression.
 
 
