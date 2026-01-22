@@ -1,0 +1,17 @@
+Node.js uses semantic versioning to determine compatibility between different versions of the same package.
+
+It uses 3 parts to determine compatibility:
+1. Major version
+2. Minor version
+3. Patch version
+These parts are also known as semver components or bits.
+Example: 1.0.0 is a major version, 0 is a minor version, and 0 is a patch version.
+
+It is important to use semantic versioning to ensure that different versions of the same package are compatible with each other to avoid crashes.
+
+When bugs are fixed, it is important to increment the patch version. It doesn't affect the compatibility of the package.
+When a new feature is added, it is important to increment the minor version. It doesn't affect the compatibility of the package.
+When a new major version is released, it is important to increment the major version. It affects the compatibility of the package.
+ 
+The ^ operator in npm is used to specify a range of versions that are compatible with the current major version of the package.
+The ~ operator in npm is used to specify a range of versions that are compatible with the current minor version of the package.

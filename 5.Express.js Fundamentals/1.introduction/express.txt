@@ -1,0 +1,15 @@
+Express is a framework for building web applications in Node.js.
+It provides a set of tools and middleware for handling HTTP requests and responses.
+A server can be made using http module also, but Express is easier to use because it provides a higher level of abstraction.
+
+To install express, use command: npm install express
+
+To start the server, use command: node index.js
+
+We use express to create a server and define routes for different URLs
+We use res.end() to send a response to the client
+We use app.listen() to start the server
+We use app.get() to define a route for a GET request
+We use app.post() to define a route for a POST request
+We use app.put() to define a route for a PUT request
+We use app.delete() to define a route for a DELETE request and so on
