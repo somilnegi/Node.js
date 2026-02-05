@@ -1,0 +1,7 @@
+Object Relation Mapping
+
+ORM is a way to map objects to database tables and vice versa.
+It can be considered as a software designed to translate between the data representations used by databased and those used in object-oriented programming languages.
+
+It is a middleware that converts the data between the application and the database.
+Its examples are Sequelize, Prisma, Drizzle and Mongoose

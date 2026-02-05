@@ -1,0 +1,10 @@
+Structured Database
+
+This database is structured, which means it has a fixed schema. It has a fixed number of tables and columns, and the data is stored in a tabular format.
+The data is stored in a relational model, which means it is normalized and is designed to be easy to query and update.
+
+
+Non-Structured Database
+
+This database is not structured, which means it has a flexible schema. It can have any number of tables and columns, and the data is stored in a non-tabular format.
+The data is stored in a non-relational model, which means it is not normalized and is designed to be easy to insert, update, and delete data.
